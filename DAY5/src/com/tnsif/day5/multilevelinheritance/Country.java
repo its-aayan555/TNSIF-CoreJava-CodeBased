@@ -1,4 +1,5 @@
-package com.tnsif.multilevelinheritance;
+package com.tnsif.day5.multilevelinheritance;
+
 
 public class Country 
 {
@@ -33,3 +34,4 @@ public class Country
 	
 	
 }
+

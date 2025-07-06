@@ -1,4 +1,5 @@
-package com.tnsif.multilevelinheritance;
+package com.tnsif.day5.multilevelinheritance;
+
 
 public class State extends Country
 {
@@ -35,3 +36,4 @@ public class State extends Country
 	
 		
 }
+

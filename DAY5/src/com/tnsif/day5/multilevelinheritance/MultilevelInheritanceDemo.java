@@ -1,4 +1,5 @@
-package com.tnsif.multilevelinheritance;
+package com.tnsif.day5.multilevelinheritance;
+
 
 public class MultilevelInheritanceDemo 
 {
@@ -20,3 +21,4 @@ public class MultilevelInheritanceDemo
 
 	
 }
+

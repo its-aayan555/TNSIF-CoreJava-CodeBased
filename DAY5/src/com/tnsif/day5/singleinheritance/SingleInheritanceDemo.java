@@ -1,4 +1,5 @@
-package com.tnsif.singleinheritance;
+package com.tnsif.day5.singleinheritance;
+
 
 public class SingleInheritanceDemo 
 {
@@ -15,3 +16,4 @@ public class SingleInheritanceDemo
 
 	
 }
+

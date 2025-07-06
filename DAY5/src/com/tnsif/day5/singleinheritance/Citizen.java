@@ -1,4 +1,5 @@
-package com.tnsif.singleinheritance;
+package com.tnsif.day5.singleinheritance;
+
 
 public class Citizen 
 {
@@ -73,3 +74,4 @@ public class Citizen
 	
 	
 }
+

@@ -1,8 +1,10 @@
-package com.tnsif.hierarchicalinheritance;
+package com.tnsif.day5.hierarchicalinheritance;
+
 
 public class HierarchicalInheritanceDemo 
 {
 
+	
 	public static void main(String[] args) 
 	{
 		
@@ -21,7 +23,7 @@ public class HierarchicalInheritanceDemo
 		System.out.println(p);
 		System.out.println("**********************************************");
 		
-		// New Values Printing
+		// New Paramaterized Values Printing
 		System.out.println("\n\nParameters Values - \n");	
 		Person p5;
 		p5 = new Person("Prem", "Pune");
@@ -34,10 +36,11 @@ public class HierarchicalInheritanceDemo
 		
 		p5 = new Employee(1001, 3.6f, "Mech", "Prem", "Pune");
 		System.out.println(p5);
-		System.out.println("**********************************************");
-		
+		System.out.println("**********************************************");		
 		
 
 	}
 
+	
 }
+

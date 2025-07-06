@@ -1,8 +1,10 @@
-package com.tnsif.hierarchicalinheritance;
+package com.tnsif.day5.hierarchicalinheritance;
+
 
 public class Person 
 {
 
+	
 	// Data members
 	private String name;
 	private String city;
@@ -48,7 +50,6 @@ public class Person
 		return "Person [name=" + name + ", city=" + city + "]";
 	}
 	
-	
-	
-	
+		
 }
+

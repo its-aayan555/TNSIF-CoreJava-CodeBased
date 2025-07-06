@@ -1,4 +1,5 @@
-package com.tnsif.multilevelinheritance;
+package com.tnsif.day5.multilevelinheritance;
+
 
 public class City extends State
 {
@@ -35,5 +36,5 @@ public class City extends State
 	}
 	
 	
-	
 }
+

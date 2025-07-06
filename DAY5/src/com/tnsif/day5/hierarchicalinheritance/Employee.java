@@ -1,13 +1,16 @@
-package com.tnsif.hierarchicalinheritance;
+package com.tnsif.day5.hierarchicalinheritance;
+
 
 public class Employee extends Person
 {
 
+	
 	// Data members
 	private int empId;
 	private float salary;
 	private String empDept;
 	
+	// Default Constructor
 	public Employee()
 	{
 		System.out.println("Employee class Default Constructor");
@@ -16,6 +19,7 @@ public class Employee extends Person
 		empDept = "IT";
 	}
 
+	// Para Constructor
 	public Employee(int empId, float salary, String empDept, String name, String city) 
 	{
 		super(name, city);
@@ -24,6 +28,7 @@ public class Employee extends Person
 		this.empDept = empDept;
 	}
 
+	// Getter-Setter
 	public int getEmpId() {
 		return empId;
 	}
@@ -48,6 +53,7 @@ public class Employee extends Person
 		this.empDept = empDept;
 	}
 
+	// toString() method
 	@Override
 	public String toString() {
 		return "Employee [empId=" + empId + ", salary=" + salary + ", empDept=" + empDept + ", getName()=" + getName()
@@ -56,7 +62,5 @@ public class Employee extends Person
 	
 	
 	
-	
-	
-	
 }
+

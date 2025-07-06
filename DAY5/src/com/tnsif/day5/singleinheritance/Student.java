@@ -1,4 +1,5 @@
-package com.tnsif.singleinheritance;
+package com.tnsif.day5.singleinheritance;
+
 
 public class Student extends Citizen
 {
@@ -55,3 +56,4 @@ public class Student extends Citizen
 	
 	
 }
+
