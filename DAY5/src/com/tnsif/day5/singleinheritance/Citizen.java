@@ -4,74 +4,63 @@ package com.tnsif.day5.singleinheritance;
 public class Citizen 
 {
 
-	// Data members
 	private String name;
+	private String adharNo;
 	private String address;
-	private String aadharNo;
-	private long mobileNo;
+	private long phone;
 	
-	// Default Constructor
-	public Citizen() 
-	{
-		System.out.println("Citizen object is Created !");
+	//	Default constructor
+	public Citizen() {
+		System.out.println("citizen object created ");
 	}
 
-	// Para Constructor
-	public Citizen(String name, String address, String aadharNo, long mobileNo) 
-	{
-		super();
+	//	parameterized constructor
+	public Citizen(String name, String adharNo, String address, long phone) {
+
 		this.name = name;
+		this.adharNo = adharNo;
 		this.address = address;
-		this.aadharNo = aadharNo;
-		this.mobileNo = mobileNo;
+		this.phone = phone;
 	}
 
-	// Getter-Setter
-	public String getName() 
-	{
+	//	getter setter method
+	public String getName() {
 		return name;
 	}
-	public void setName(String name) 
-	{
+
+	public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getAddress() 
-	{
+	public String getAdharNo() {
+		return adharNo;
+	}
+
+	public void setAdharNo(String adharNo) {
+		this.adharNo = adharNo;
+	}
+
+	public String getAddress() {
 		return address;
 	}
-	public void setAddress(String address) 
-	{
+
+	public void setAddress(String address) {
 		this.address = address;
 	}
 
-	public String getAadharNo() 
-	{
-		return aadharNo;
-	}
-	public void setAadharNo(String aadharNo) 
-	{
-		this.aadharNo = aadharNo;
+	public long getPhone() {
+		return phone;
 	}
 
-	public long getMobileNo() 
-	{
-		return mobileNo;
-	}
-	public void setMobileNo(long mobileNo) 
-	{
-		this.mobileNo = mobileNo;
+	public void setPhone(long phone) {
+		this.phone = phone;
 	}
 
-	// toString()
+	//	toString method
 	@Override
-	public String toString() 
-	{
-		return "Citizen [name=" + name + ", address=" + address + ", aadharNo=" + aadharNo + ", mobileNo=" + mobileNo
-				+ "]";
+	public String toString() {
+		return "Citizen [name=" + name + ", adharNo=" + adharNo + ", address=" + address + ", phone=" + phone + "]";
 	}
-	
 	
 	
 }
-

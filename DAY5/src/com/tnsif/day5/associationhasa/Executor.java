@@ -1,22 +1,20 @@
 package com.tnsif.day5.associationhasa;
 
+
 public class Executor 
 {
 
 	
 	public static void main(String[] args) 
-	{
+	{	
 		
-		Address add = new Address("43/6 Hanuman Nagar", "Pune", "Maharashtra", "411046");
+		Address address = new Address("5903 Laxminagar", "Pune", "Maharashtra", "412105");
 		
-		Employee emp = new Employee("Aayan", add);
+		Person p = new Person("Datta",address);
+		p.displayInfo();
+		System.out.println(p);
 		
-		emp.displayInfo();
-		
-		System.out.println(emp);
-
 	}
 
 	
 }
-

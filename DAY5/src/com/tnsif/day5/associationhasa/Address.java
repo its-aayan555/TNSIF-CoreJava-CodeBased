@@ -1,72 +1,62 @@
 package com.tnsif.day5.associationhasa;
 
+
 public class Address 
 {
 
-	
-	// Data members
 	private String street;
 	private String city;
 	private String state;
-	private String postalcode;
+	private String postalCode;
 	
-	// Default Constructor
-	public Address()
+	//	Default constructor
+	public Address() 
 	{
 		super();
 	}
-	
-	// Para Constructor
-	public Address(String street, String city, String state, String postalcode) 
+
+	//	Parameterized constructor
+	public Address(String street, String city, String state, String postalCode) 
 	{
 		super();
 		this.street = street;
 		this.city = city;
 		this.state = state;
-		this.postalcode = postalcode;
+		this.postalCode = postalCode;
 	}
 
-
-	// Getter-Setter
-	public String getStreet() 
-	{
+	//	Getter Setter Method
+	public String getStreet() {
 		return street;
 	}
-	public void setStreet(String street) 
-	{
+
+	public void setStreet(String street) {
 		this.street = street;
 	}
 
-	
-	public String getCity() 
-	{
+	public String getCity() {
 		return city;
 	}
-	public void setCity(String city) 
-	{
+
+	public void setCity(String city) {
 		this.city = city;
 	}
 
-
-	public String getState() 
-	{
+	public String getState() {
 		return state;
 	}
-	public void setState(String state) 
-	{
+
+	public void setState(String state) {
 		this.state = state;
 	}
 
-
-	public String getPostalcode() 
-	{
-		return postalcode;
+	public String getPostalCode() {
+		return postalCode;
 	}
-	public void setPostalcode(String postalcode) 
-	{
-		this.postalcode = postalcode;
+
+	public void setPostalCode(String postalCode) {
+		this.postalCode = postalCode;
 	}
 	
 	
 }
-

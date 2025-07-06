@@ -1,66 +1,64 @@
 package com.tnsif.day5.hierarchicalinheritance;
 
-
-public class Employee extends Person
+public class Employee extends Person 
 {
 
-	
-	// Data members
-	private int empId;
+	private String empId;
 	private float salary;
-	private String empDept;
+	private String dept;
 	
-	// Default Constructor
-	public Employee()
-	{
-		System.out.println("Employee class Default Constructor");
-		empId = 101;
-		salary = 7.2f;
-		empDept = "IT";
+	
+	public Employee() {
+		System.out.println("default Value of Employee class ");
+		empId = "101";
+		salary = 720000;
+		dept = "IT";
 	}
 
-	// Para Constructor
-	public Employee(int empId, float salary, String empDept, String name, String city) 
-	{
+
+	public Employee(String name, String city, String empId, float salary, String dept) {
 		super(name, city);
 		this.empId = empId;
 		this.salary = salary;
-		this.empDept = empDept;
+		this.dept = dept;
 	}
 
-	// Getter-Setter
-	public int getEmpId() {
+
+	public String getEmpId() {
 		return empId;
 	}
 
-	public void setEmpId(int empId) {
+
+	public void setEmpId(String empId) {
 		this.empId = empId;
 	}
+
 
 	public float getSalary() {
 		return salary;
 	}
 
+
 	public void setSalary(float salary) {
 		this.salary = salary;
 	}
 
-	public String getEmpDept() {
-		return empDept;
+
+	public String getDept() {
+		return dept;
 	}
 
-	public void setEmpDept(String empDept) {
-		this.empDept = empDept;
+
+	public void setDept(String dept) {
+		this.dept = dept;
 	}
 
-	// toString() method
+
 	@Override
 	public String toString() {
-		return "Employee [empId=" + empId + ", salary=" + salary + ", empDept=" + empDept + ", getName()=" + getName()
+		return "Employee [empId=" + empId + ", salary=" + salary + ", dept=" + dept + ", getName()=" + getName()
 				+ ", getCity()=" + getCity() + "]";
 	}
 	
 	
-	
 }
-

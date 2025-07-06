@@ -3,57 +3,48 @@ package com.tnsif.day5.singleinheritance;
 
 public class Student extends Citizen
 {
-	
-	// No need 
-	// private String studName;
-	// private String studAddress;
-	// private long studMobileNo;
-	
-	// Data members
-	private int studRollNo;
-	private String studCollege;
-	
-	// Default Constructor
-	public Student()
-	{
+
+	//	Data Member
+	private int rollNo;
+	private String collegeName;
+
+	//		parameterized constructor
+	public Student() {
 		super();
 	}
 
-	// Para Constructor
-	public Student(String name, String address, String aadharNo, long mobileNo, int studRollNo, String studCollege) 
-	{
-		super( name, address, aadharNo, mobileNo);
-		this.studRollNo = studRollNo;
-		this.studCollege = studCollege;
+	//	Mon parameterized constructor
+	public Student(String name, String adharNo, String address, long phone, int rollNo, String collegeName) {
+		super(name, adharNo, address, phone);
+		this.rollNo = rollNo;
+		this.collegeName = collegeName;
 	}
 
-	// Getter-Setter
-	public int getStudRollNo() 
-	{
-		return studRollNo;
-	}
-	public void setStudRollNo(int studRollNo) 
-	{
-		this.studRollNo = studRollNo;
+
+	//	Getter Setter method
+	public int getRollNo() {
+		return rollNo;
 	}
 
-	public String getStudCollege() 
-	{
-		return studCollege;
+	public void setRollNo(int rollNo) {
+		this.rollNo = rollNo;
 	}
-	public void setStudCollege(String studCollege) 
-	{
-		this.studCollege = studCollege;
+
+	public String getCollegeName() {
+		return collegeName;
 	}
-	
-	// toString()
+
+	public void setCollegeName(String collegeName) {
+		this.collegeName = collegeName;
+	}
+
+
+	//	toString Method
 	@Override
 	public String toString() {
-		return "Student [studRollNo=" + studRollNo + ", studCollege=" + studCollege + ", getName()=" + getName()
-				+ ", getAddress()=" + getAddress() + ", getAadharNo()=" + getAadharNo() + ", getMobileNo()="
-				+ getMobileNo() + "]";
+		return "Student [rollNo= " + rollNo + ", collegeName= " + collegeName + ", getName()= " + getName()
+				+ ", getAdharNo()= " + getAdharNo() + ", getAddress()= " + getAddress() + ", getPhone()= " + getPhone()+ "]";
 	}
-	
-	
-}
 
+
+}

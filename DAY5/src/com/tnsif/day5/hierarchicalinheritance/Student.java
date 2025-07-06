@@ -1,29 +1,24 @@
 package com.tnsif.day5.hierarchicalinheritance;
 
-
-public class Student extends Person
+public class Student extends Person 
 {
-
-	// Data Members
-	private String clas;
-	private double cgpa;
 	
-	// Default Constructor
-	public Student()
-	{
-		System.out.println("Student Class Default Constructor");
+	private String clas;
+	private float percentage;
+	
+	public Student() {
+		System.out.println("Default value of Student class");
 		clas = "TE";
-		cgpa = 6.98d;
+		percentage = 6.98f;
+		
 	}
 
-	// Para Constructor
-	public Student(String name, String city, String clas, double cgpa) {
+	public Student(String name, String city,String clas, float percentage) {
 		super(name, city);
 		this.clas = clas;
-		this.cgpa = cgpa;
+		this.percentage = percentage;
 	}
 
-	// Getter-Setter
 	public String getClas() {
 		return clas;
 	}
@@ -32,21 +27,20 @@ public class Student extends Person
 		this.clas = clas;
 	}
 
-	public double getCgpa() {
-		return cgpa;
+	public float getPercentage() {
+		return percentage;
 	}
 
-	public void setCgpa(double cgpa) {
-		this.cgpa = cgpa;
+	public void setPercentage(float percentage) {
+		this.percentage = percentage;
 	}
 
-	// toString() method
 	@Override
 	public String toString() {
-		return "Student [clas=" + clas + ", cgpa=" + cgpa + ", getName()=" + getName() + ", getCity()=" + getCity()
-				+ "]";
-	}	
-	
-		
-}
+		return "Student [clas=" + clas + ", percentage=" + percentage + ", getName()=" + getName() + ", getCity()="
+				+ getCity() + "]";
+	}
 
+	
+	
+}

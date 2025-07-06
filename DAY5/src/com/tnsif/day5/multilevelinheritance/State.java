@@ -1,39 +1,33 @@
 package com.tnsif.day5.multilevelinheritance;
 
 
-public class State extends Country
+public class State extends Country 
 {
 
-	// Data members
+	//	Data members
 	private String stateName;
-	private String langguage;
-	
-	// Getter-Setter
-	public String getStateName() 
-	{
+	private String language;
+
+	//	getter Setter method
+	public String getStateName() {
 		return stateName;
 	}
-	public void setStateName(String stateName) 
-	{
+	public void setStateName(String stateName) {
 		this.stateName = stateName;
 	}
-	
-	public String getLangguage() 
-	{
-		return langguage;
+	public String getLanguage() {
+		return language;
 	}
-	public void setLangguage(String langguage) 
-	{
-		this.langguage = langguage;
+	public void setLanguage(String language) {
+		this.language = language;
 	}
-	
-	// toString()
+
+	//	toString Method
 	@Override
 	public String toString() {
-		return "State [stateName=" + stateName + ", langguage=" + langguage + ", getCountryName()=" + getCountryName()
-				+ ", getCapital()=" + getCapital() + "]";
+		return "State [stateName=" + stateName + ", language=" + language + ", getCountryName()=" + getCountryName()
+			+ ", getCapital()=" + getCapital() + "]";
 	}
-	
-		
-}
 
+
+}

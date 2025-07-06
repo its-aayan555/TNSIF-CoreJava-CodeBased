@@ -4,52 +4,42 @@ package com.tnsif.day5.hierarchicalinheritance;
 public class Person 
 {
 
-	
-	// Data members
 	private String name;
 	private String city;
-	
-	// Default Constructor
-	public Person() 
-	{
-		System.out.println("Person Class default value Constructor");
-		this.name = "Aayan";
+
+	//	Default Constructor
+	public Person() {
+		System.out.println("default value of Person class ");
 		this.city = "Pune";
+		this.name = "Aayan";
 	}
-	
-	// Para Constructor
-	public Person(String name, String city) 
-	{
-		super();
+
+	public Person(String name, String city) {
+
 		this.name = name;
 		this.city = city;
 	}
 
-	// Getter-Setter
-	public String getName() 
-	{
+	public String getName() {
 		return name;
 	}
-	public void setName(String name) 
-	{
+
+	public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getCity() 
-	{
+	public String getCity() {
 		return city;
 	}
-	public void setCity(String city) 
-	{
+	
+	public void setCity(String city) {
 		this.city = city;
 	}
 
-	// toString()
 	@Override
 	public String toString() {
 		return "Person [name=" + name + ", city=" + city + "]";
 	}
-	
-		
-}
 
+	
+}

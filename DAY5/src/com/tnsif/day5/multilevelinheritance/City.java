@@ -1,40 +1,34 @@
 package com.tnsif.day5.multilevelinheritance;
 
-
-public class City extends State
+//	Extends state multilevel inheritance
+public class City extends State 
 {
-
-	// Data members
-	private String cityName;
-	private float cityArea;
 	
-	// Getter-Setter
-	public String getCityName() 
-	{
+	//	Data member
+	private String cityName;
+	private float area;
+
+	//	Getter Setter method
+	public String getCityName() {
 		return cityName;
 	}
-	public void setCityName(String cityName) 
-	{
+	public void setCityName(String cityName) {
 		this.cityName = cityName;
 	}
 	
-	public float getCityArea()
-	{
-		return cityArea;
+	public float getArea() {
+		return area;
 	}
-	public void setCityArea(float cityArea) 
-	{
-		this.cityArea = cityArea;
+	public void setArea(float area) {
+		this.area = area;
 	}
-	
-	// toString()
+
+	//	toString Method
 	@Override
 	public String toString() {
-		return "City [cityName=" + cityName + ", cityArea=" + cityArea + ", getStateName()=" + getStateName()
-				+ ", getLangguage()=" + getLangguage() + ", getCountryName()=" + getCountryName() + ", getCapital()="
-				+ getCapital() + "]";
+		return "City [cityName=" + cityName + ", area=" + area + ", getStateName()=" + getStateName()
+				+ ", getLanguage()=" + getLanguage() + ", getCountryName()=" + getCountryName() + ", getCapital()=" + getCapital() + "]";
 	}
-	
-	
-}
 
+
+}
