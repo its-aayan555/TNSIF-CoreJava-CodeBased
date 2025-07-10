@@ -8,13 +8,13 @@ public class NestedTryCatch
 	public static void check()
 	{
 		
-		String str="TNS";
-		int slength=str.length();  
-		System.out.println("String Lenght:"+ slength);
+		String str = "TNS";
+		int slength = str.length();  
+		System.out.println("String Lenght : " + slength);
 		
-		String anotherString= null;
+		String anotherString = null;
 		
-		int y=6;
+		int y = 6;
 		
 		// Outer Try Block
 		try 
@@ -31,7 +31,7 @@ public class NestedTryCatch
 				System.err.println(e.getMessage());
 			}
 			
-			System.out.println("String length : "+anotherString.length());
+			System.out.println("String length : "+ anotherString.length());
 			
 		}
 		
