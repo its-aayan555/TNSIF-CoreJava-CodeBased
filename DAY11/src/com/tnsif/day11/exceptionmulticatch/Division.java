@@ -18,7 +18,8 @@ public class Division
 		
 		// Try Block
 		try
-		{
+		{ 
+			// Input Values
 			a = sc.nextInt();
 			b = sc.nextInt();
 			
